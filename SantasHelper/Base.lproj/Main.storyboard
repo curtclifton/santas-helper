@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,7 +17,6 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7DH-Aq-xuc">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iye-Vs-6An">
                                     <size key="itemSize" width="50" height="50"/>
@@ -31,7 +29,6 @@
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
@@ -51,11 +48,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Iqs-Px-Yav" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="EPu-dH-hVa"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Iqs-Px-Yav" secondAttribute="trailing" constant="-16" id="ijn-DO-Jbn"/>
+                            <constraint firstItem="Iqs-Px-Yav" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="EPu-dH-hVa"/>
+                            <constraint firstAttribute="trailing" secondItem="Iqs-Px-Yav" secondAttribute="trailing" id="ijn-DO-Jbn"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Iqs-Px-Yav" secondAttribute="bottom" id="y1I-I0-oLA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="7DH-Aq-xuc" id="Zsn-Ga-zzl"/>
+                        <outlet property="flowLayout" destination="iye-Vs-6An" id="6jc-Ah-FoU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
