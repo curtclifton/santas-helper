@@ -13,6 +13,7 @@
 		4D6D49BB19F7554000A67CDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D6D49BA19F7554000A67CDB /* Images.xcassets */; };
 		4D6D49BE19F7554000A67CDB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D6D49BC19F7554000A67CDB /* LaunchScreen.xib */; };
 		4D6D49CA19F7554000A67CDB /* SantasHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D49C919F7554000A67CDB /* SantasHelperTests.swift */; };
+		4DAD0B6C1A09D9DC00C2C413 /* CollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAD0B6B1A09D9DC00C2C413 /* CollectionViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		4D6D49C319F7554000A67CDB /* SantasHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SantasHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D6D49C819F7554000A67CDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D6D49C919F7554000A67CDB /* SantasHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SantasHelperTests.swift; sourceTree = "<group>"; };
+		4DAD0B6B1A09D9DC00C2C413 /* CollectionViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				4D6D49B319F7554000A67CDB /* AppDelegate.swift */,
+				4DAD0B6B1A09D9DC00C2C413 /* CollectionViewDelegate.swift */,
 				4D6D49B519F7554000A67CDB /* ViewController.swift */,
 				4D6D49B719F7554000A67CDB /* Main.storyboard */,
 				4D6D49BA19F7554000A67CDB /* Images.xcassets */,
@@ -215,6 +218,7 @@
 			files = (
 				4D6D49B619F7554000A67CDB /* ViewController.swift in Sources */,
 				4D6D49B419F7554000A67CDB /* AppDelegate.swift in Sources */,
+				4DAD0B6C1A09D9DC00C2C413 /* CollectionViewDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +412,7 @@
 				4D6D49CF19F7554000A67CDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D6D49D019F7554000A67CDB /* Build configuration list for PBXNativeTarget "SantasHelperTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +421,7 @@
 				4D6D49D219F7554000A67CDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
